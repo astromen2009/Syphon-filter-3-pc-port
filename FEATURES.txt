@@ -1,0 +1,97 @@
+SYPHON FILTER 3 - PC  (version 0.9.0)
+=====================================
+
+WHAT IT IS
+  Runs the original Syphon Filter 3 (USA disc, SCUS_946.40) and draws it on
+  the PC. The game itself is unchanged: AI, missions, combat and animations
+  are the original ones. You need your own copy of the disc (.bin + .cue).
+
+GRAPHICS
+  - Native PC renderer (PsyCross): any internal resolution (1080p, 1440p,
+    4K...), MSAA 2x/4x/8x or SMAA anti-aliasing, pixelated, bilinear,
+    trilinear or anisotropic texture filtering.
+  - PGXP: vertices and textures no longer wobble; perspective-correct
+    texturing and a depth buffer (nothing is drawn in front of what it
+    should be behind).
+  - True widescreen (Hor+): you see more at the sides, nothing is stretched.
+    Original 4:3 available.
+  - Smooth motion: the game runs on its own thread at its original speed and
+    the picture is interpolated to the monitor's refresh rate. V-sync and FPS
+    limit (30 to 240) configurable.
+  - Distant characters keep their full model (the game used a simplified one).
+  - HUD redrawn at PC resolution, sharp; adjustable size and an option to
+    move it to the screen edges.
+  - Live, smoothed scene lighting; broken lights really go out.
+  - Muzzle flashes light the floor, walls and ceiling; gun smoke; blue taser
+    light.
+  - 3D effects: blood (sprays and wounds), breaking glass, sparks, bullet
+    marks, tracers, fire.
+  - Character shadows.
+  - Snow and breath vapour in cold missions.
+  - Characters stand properly on the ground (no buried or floating feet).
+  - Game videos enlarged or as on the PS1.
+
+SCOPES
+  - AU300 X-ray scope REBUILT: inside the scope box the PC draws the real
+    scene with the same camera as the normal view, removing the walls it
+    looks through. It lines up with the outside view, has no lag when the
+    scope moves, is sharp and keeps the dark PS1 look. Characters and the
+    weapons they carry are seen through the wall in green. Tunable in
+    sf3_nativo.ini (rayosx_*).
+  - Night vision (Dragunov) like the original, also in widescreen.
+  - Lock-on reticle (R1) and scope blades adapted to widescreen.
+
+CONTROLS
+  - 1:1 mouse turning and aiming (like the Syphon Filter 1 port), adjustable
+    sensitivity and inversion; mouse wheel switches weapons.
+  - Configurable keyboard and gamepad (key and pad window in the launcher),
+    analog pad as a DualShock, rumble.
+  - Classic (original) or modern movement.
+  - Second player (pad or keyboard) for the two-player mode.
+
+WEAPONS
+  - Own weapon bank: any weapon shows up with its model, texture, photo in
+    the Weapons menu and its sound in any mission.
+  - Weapons from Syphon Filter 1 and 2: flamethrower, Gatling gun, hand
+    taser and Stryker shotgun, with icons and photos.
+  - Weapon sounds configurable with WAV files (armas.txt).
+  (Needs armas.pak.)
+
+LANGUAGES
+  - Text and voices are chosen separately.
+  - English: the original game.
+  - Spanish: text, voices, video audio and menus.
+  - Russian: text (Cyrillic font, menus) and full dub.
+  (Spanish and Russian need idiomas.pak.)
+
+MENUS AND CONVENIENCE
+  - Windows launcher: play, settings (graphics, sound, controls, language)
+    and exit.
+  - PC options with F12 at any time (graphics, controls, sound, save and
+    load game).
+  - Cheats in F12 > CHEATS: unlock all, invulnerable, all weapons, invisible.
+  - Memory card saved as files, with its own save list; "Continue" in the
+    main menu.
+  - High-quality main menu: the upscaled title video
+    (videos_propios\TITLE_alta.mpg; CONVERTIR_MENU.bat and INTERPOLAR_MENU.bat
+    help prepare it, at 30 or 60 frames per second).
+  - Optional fast loading (turbo).
+
+CHARACTERS
+  - Extra characters for the mini-game and the two-player mode (personajes
+    folder), with their own name and portrait; the same roster in both modes.
+
+FILES
+  bin\sf3_nativo.exe      the game
+  bin\SDL2.dll            required
+  bin\CREAR_PAKS.bat      joins the language and weapon files into their .pak
+  bin\AJUSTES_INI.txt     every sf3_nativo.ini setting explained (Spanish)
+  idiomas.pak, armas.pak  optional data (not included); next to the .exe or
+                          up to three folders above
+  sf3_nativo.ini          settings (created automatically)
+  partidas\               saves and memory card
+
+KEYS
+  F12        PC options (and cheats)
+  Esc        game pause menu / back
+  Alt+Enter  full screen

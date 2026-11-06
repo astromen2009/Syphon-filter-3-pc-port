@@ -1,0 +1,98 @@
+SYPHON FILTER 3 - PC  (versión 0.9.0)
+=====================================
+
+QUÉ ES
+  Ejecuta el Syphon Filter 3 original (disco USA, SCUS_946.40) y lo dibuja en
+  el PC. El juego sigue siendo el mismo: IA, misiones, combate y animaciones
+  son las del original. Hace falta tu propia copia del disco (.bin + .cue).
+
+GRÁFICOS
+  - Renderizador nativo de PC (PsyCross): resolución interna libre (1080p,
+    1440p, 4K...), antialiasing MSAA 2x/4x/8x o SMAA, filtrado de texturas
+    pixelado, bilineal, trilineal o anisotrópico.
+  - PGXP: los vértices y las texturas ya no tiemblan; perspectiva correcta y
+    z-buffer (nada se dibuja por delante de lo que no debe).
+  - Pantalla ancha de verdad (Hor+): se ve más a los lados sin estirar nada.
+    Formato original 4:3 disponible.
+  - Movimiento fluido: el juego corre en su propio hilo a su velocidad
+    original y la imagen se interpola a la frecuencia del monitor. Sincronía
+    vertical y límite de FPS (30 a 240) configurables.
+  - Personajes lejanos con su modelo completo (el juego usaba uno simplificado).
+  - HUD redibujado a la resolución del PC, nítido; tamaño ajustable y opción
+    de llevarlo a los bordes de la pantalla.
+  - Luz del escenario en vivo y suavizada; las luces rotas se apagan de verdad.
+  - Fogonazos que iluminan suelo, paredes y techo; humo de los disparos; luz
+    azul del táser.
+  - Efectos en 3D: sangre (chorros y heridas), cristales rotos, chispas,
+    marcas de bala, trazadoras, fuego.
+  - Sombras de los personajes.
+  - Nieve y vaho de la respiración en las misiones frías.
+  - Personajes bien apoyados en el suelo (sin pies enterrados ni flotando).
+  - Vídeos del juego ampliados o como en la PS1.
+
+MIRAS
+  - Mira de rayos X de la AU300 REHECHA: dentro del recuadro el PC dibuja el
+    escenario real con la misma cámara que la vista normal, quitando las
+    paredes que atraviesa. Encaja con lo de fuera, no tiene retraso al mover
+    la mira, es nítida y conserva el aspecto oscuro de la PS1. Los personajes
+    y las armas que llevan se ven a través de la pared en verde. Ajustable en
+    sf3_nativo.ini (rayosx_*).
+  - Visión nocturna (Dragunov) como la original, también en pantalla ancha.
+  - Mira de fijar blanco (R1) y aspas de la mira adaptadas a pantalla ancha.
+
+CONTROLES
+  - Ratón 1:1 para girar y apuntar (como el port de Syphon Filter 1), con
+    sensibilidad e inversión ajustables; rueda para cambiar de arma.
+  - Teclado y mando configurables (ventana de teclas y mando en el
+    lanzador), mando analógico como un DualShock, vibración.
+  - Movimiento clásico (el original) o moderno.
+  - Segundo jugador (mando o teclado) para el modo de 2 jugadores.
+
+ARMAS
+  - Banco de armas propio: cualquier arma sale con su modelo, textura, foto
+    en el menú Armamento y su sonido en cualquier misión.
+  - Armas de Syphon Filter 1 y 2: lanzallamas, ametralladora Gatling, táser
+    de mano y escopeta Stryker, con sus iconos y fotos.
+  - Sonidos de las armas configurables con archivos WAV (armas.txt).
+  (Requiere armas.pak.)
+
+IDIOMAS
+  - Textos y voces se eligen por separado.
+  - Inglés: el juego original.
+  - Español: textos, voces, audio de los vídeos y menús.
+  - Ruso: textos (fuente cirílica, menús) y doblaje completo.
+  (Español y ruso requieren idiomas.pak.)
+
+MENÚS Y COMODIDAD
+  - Lanzador de Windows: jugar, configuración (gráficos, sonido, controles,
+    idioma) y salir.
+  - Opciones del PC con F12 en cualquier momento (gráficos, controles,
+    sonido, guardar y cargar partida).
+  - Trucos en F12 > TRUCOS: desbloquear todo, invulnerable, todas las armas
+    e invisible.
+  - Tarjeta de memoria guardada como archivos, con su propia lista de
+    partidas; "Continuar" en el menú principal.
+  - Menú principal en alta calidad: el vídeo del título reescalado
+    (videos_propios\TITLE_alta.mpg; CONVERTIR_MENU.bat e INTERPOLAR_MENU.bat
+    ayudan a prepararlo, a 30 o 60 cuadros por segundo).
+  - Cargas rápidas (turbo) opcionales.
+
+PERSONAJES
+  - Personajes añadidos al minijuego y al modo de 2 jugadores (carpeta
+    personajes), con nombre y retrato propios; el mismo reparto en los dos
+    modos.
+
+ARCHIVOS
+  bin\sf3_nativo.exe      el juego
+  bin\SDL2.dll            necesaria
+  bin\CREAR_PAKS.bat      junta los archivos de idiomas y armas en sus .pak
+  bin\AJUSTES_INI.txt     todos los ajustes de sf3_nativo.ini explicados
+  idiomas.pak, armas.pak  datos opcionales (no incluidos); junto al .exe o
+                          hasta tres carpetas más arriba
+  sf3_nativo.ini          ajustes (se crea solo)
+  partidas\               partidas y tarjeta de memoria
+
+TECLAS
+  F12        opciones del PC (y trucos)
+  Esc        menú de pausa del juego / volver
+  Alt+Enter  pantalla completa
