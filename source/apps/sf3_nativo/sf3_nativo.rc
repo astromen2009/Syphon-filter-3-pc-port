@@ -1,0 +1,6 @@
+// v217: manifiesto (controles de Windows con el estilo actual en el lanzador)
+1 24 "sf3_nativo.manifest"
+// v225: iconos del exe (el primero, 101, es el principal; los otros se pueden elegir en un acceso directo)
+101 ICON "SF3.ico"
+102 ICON "SF3_2.ico"
+103 ICON "SF3_3.ico"
